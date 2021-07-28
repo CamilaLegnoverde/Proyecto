@@ -1,0 +1,73 @@
+/*----HEADER----*/
+/*----MAIN----*/
+body {
+  background-color: #CCE6FF;
+  margin: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 10%;
+      grid-template-columns: 10% 10%;
+  -ms-grid-rows: 10% 10%;
+      grid-template-rows: 10% 10%;
+      grid-template-areas: "menu principal" "menu principal";
+}
+
+body #menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  padding: 22.3rem 0rem;
+  background-color: #66B3FF;
+}
+
+body #menu #navegacion a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+body #menu #navegacion a :link {
+  color: black;
+}
+
+body #menu #navegacion div :hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(26, 140, 255, 0.822);
+}
+
+body #informacion {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: principal;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  border-radius: 10%;
+  padding: 2rem;
+}
+
+body #informacion h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
+
+body #informacion h1 :hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+/*----FOOTER----*/
+/*# sourceMappingURL=mainsass.css.map */

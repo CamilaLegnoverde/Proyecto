@@ -1,0 +1,49 @@
+/*----HEADER----*/
+/*----MAIN----*/
+body{
+    background-color: #CCE6FF;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 10% 10%;
+    grid-template-rows: 10% 10%;
+    grid-template-areas: "menu principal"
+                         "menu principal" ;
+    #menu{
+        grid-area: menu;
+        grid-row: 1/4;
+        padding: 22.3rem 0rem;
+        background-color: #66B3FF;
+        #navegacion{
+            a{
+                display: flex;
+                justify-content: stretch;
+                text-decoration: none;
+                padding: 1rem;
+                font-family: Roboto, sans-serif;
+                font-weight: bold;
+                color: black;
+            }
+            a :link{
+                color: black;
+            }
+            div :hover{
+                transition: all 0.5s ease-in-out;
+                background-color: rgba(26, 140, 255, 0.822);
+            }
+        }
+    }
+    #informacion{
+        grid-area: principal;
+        grid-row: 3/3;
+        border-radius: 10%;
+        padding: 2rem;
+        h1{
+            font-family: Roboto, sans-serif;
+            font-weight: normal;
+        }
+        h1 :hover{
+            transform: scale(2);
+        }
+    }
+}
+/*----FOOTER----*/

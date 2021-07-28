@@ -1,0 +1,27 @@
+/*----CURRICULUM PAGE----*/
+/*----Header----*/
+#background{
+    background-color: #66B3FF;
+    background-size: 2000px;
+    background-attachment: fixed;
+    header{
+        text-align: center;
+        img{
+            border-radius: 50%;
+            box-shadow: 0px 10px 10px -2px gray;
+        }
+        h1{
+            background-color:#1a8cff;
+        }
+    }
+}
+/*----Body----*/
+body{
+    margin: 0px;
+    background-color: #CCE6FF;
+    i{
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #1a8cff;
+    }
+}
