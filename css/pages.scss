@@ -66,7 +66,27 @@ body{
 }
 /*----PROYECTOS PAGE----*/
 body {
-    #background{
-        background-image: url('./img/4142726.jpg');
+    margin: 0px;
+    #background-proyectos {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/4142726.jpg');
+        background-size: 150rem;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 20rem;
+        div{
+            padding-top: 18rem;
+        }
+        p{
+            justify-content: flex-end;
+            text-align: center;
+            font-size: 25px;
+            font-family: $font;
+            font-weight: bold;
+            background-color: $secColor;
+            height: 2rem;
+            box-shadow: 0px 6px 7px -2px gray;
+        }
     }
 }
