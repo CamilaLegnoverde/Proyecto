@@ -1,3 +1,4 @@
+/*----Variables----*/
 /*----CURRICULUM PAGE----*/
 /*----Header----*/
 #background {
@@ -18,17 +19,75 @@
 
 #background header h1 {
   background-color: #1a8cff;
+  font-family: Roboto, sans-serif;
+  -webkit-box-shadow: 0px 6px 7px -2px gray;
+          box-shadow: 0px 6px 7px -2px gray;
 }
 
 /*----Body----*/
 body {
   margin: 0px;
   background-color: #CCE6FF;
+  font-family: Roboto, sans-serif;
 }
 
-body i {
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #home {
+  font-size: 2rem;
   padding: 1rem;
   border-radius: 50%;
   background-color: #1a8cff;
+  position: relative;
+  left: 30rem;
+}
+
+body #info-cv {
+  -webkit-box-shadow: 0px 10px 17px -1px gray;
+          box-shadow: 0px 10px 17px -1px gray;
+  width: 35rem;
+  padding: 1rem;
+}
+
+body #info-cv i {
+  font-size: 20px;
+  color: #6613b4;
+}
+
+body #info-cv span {
+  font-weight: bold;
+  color: blue;
+}
+
+body #info-cv .carrera {
+  padding-left: 8rem;
+  color: #4040ff;
+  font-style: italic;
+  font-weight: bold;
+}
+
+body #info-cv h2:hover {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-box-shadow: 0px 7px 7px -2px gray;
+          box-shadow: 0px 7px 7px -2px gray;
+  border-radius: 5rem;
+  background-color: #1a8cff;
+}
+
+/*----PROYECTOS PAGE----*/
+body #background {
+  background-image: url("./img/4142726.jpg");
 }
 /*# sourceMappingURL=pages.css.map */
