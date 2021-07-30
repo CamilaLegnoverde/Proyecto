@@ -89,4 +89,41 @@ body {
             box-shadow: 0px 6px 7px -2px gray;
         }
     }
+    #galeria{
+        display: inline-grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(4, 50%);
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 10px 15px;
+        grid-template-areas: "heroes" "veterinaria";
+        position: relative;
+        top: 3rem;
+        left: 3rem;
+        .proyecto-heroes{
+            grid-area: "heroes";
+        }
+        .proyecto-veterinaria {
+            grid-area: "veterinaria";
+        }
+        .proyecto{
+            width: 350px;
+        }
+        .proyecto:hover{
+            filter: blur(2px);
+            transform: scale(1.2);
+            transition: all 0.5s;
+        }
+    }
+    #icono-home{
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #1a8cff;
+    }
+    #home-proyectos{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 5rem;
+    }
 }

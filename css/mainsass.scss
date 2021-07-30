@@ -6,6 +6,9 @@ body{
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
+    header{
+        display:none;
+    }
     #menu{
         flex-direction: column;
         height: 59rem;
@@ -93,4 +96,33 @@ body{
             color:rgb(0, 26, 255);
         }
     }
+}
+/*----Media----*/
+@media (max-width: 800px){
+    header div{
+        display: flex;
+        background-color: #66B3FF;
+        color: red;
+    }
+    #menu{
+        display: none;
+    }
+    #titulo{
+        height: 2px;
+        p{
+            font-size: 1rem;
+        }
+        &:hover{
+            transform: none;
+        }
+    }
+    #informacion{
+     border: rgb(140, 0, 255) solid 2px;
+     p{
+         padding: 100rem;
+         position: relative;
+         right: 10rem;
+         bottom: 30rem;
+     }
+     }
 }
