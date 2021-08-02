@@ -150,11 +150,13 @@ body #galeria .proyecto-veterinaria {
 
 body #galeria .proyecto {
   width: 350px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 body #galeria .proyecto:hover {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: none;
+          filter: none;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.5s;

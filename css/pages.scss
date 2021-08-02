@@ -107,9 +107,10 @@ body {
         }
         .proyecto{
             width: 350px;
+            filter: blur(2px);
         }
         .proyecto:hover{
-            filter: blur(2px);
+            filter: none;
             transform: scale(1.2);
             transition: all 0.5s;
         }
